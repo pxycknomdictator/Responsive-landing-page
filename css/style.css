@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* primary colors; */
+    --BrightRed: hsl(12, 88%, 59%);
+    --DarkBlue: hsl(228, 39%, 23%);
+
+    /* neutral colors */
+    --DarkGrayishBlue: hsl(227, 12%, 61%);
+    --VeryDarkBlue: hsl(233, 12%, 13%);
+    --VeryPaleRed: hsl(13, 100%, 96%);
+    --VaryLightGray: hsl(0, 0%, 98%);
+}
+
+
+a{
+    color: black;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* utilities classes */
+
+.flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+}
+
+.mx-width{
+    width: 85%;
+    margin-inline: auto;
+}
+
+.margin-block{
+    margin-block: 2.5rem;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.color{
+    color: var(--VeryDarkBlue);
+}
+
+.bg-color{
+    background: var(--BrightRed);
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.shape{
+    position: fixed;
+    z-index: -1;
+    top: -32%; 
+    right: -13%;
+}
+
+.header{
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+}
+
+.navigation{
+    gap: 3rem;
+}
+
+.nav-links > a{
+    font-size: 1.4rem;
+    color: var(--DarkBlue);
+}
+
+.btn{
+    padding: 1.3rem 2rem;
+    border: none;
+    background: var(--BrightRed);
+    color: white;
+    font-weight: 700;
+    border-radius: 3pc;
+}
+
+.primary-btn{
+    box-shadow: 0px 1px 6px 0px var(--BrightRed);
+}
+
+.ham-burger{
+    display: none;
+}
+
+/* hero section */
+
+.hero{
+    margin-top: 2rem;
+}
+
+.hero-left{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-left h1{
+    font-size: 4rem;
+    color: var(--DarkBlue);
+}
+
+.hero-left p{
+    font-size: 1.5rem;
+    color: var(--DarkGrayishBlue);
+    line-height: 2rem;
+}
+
+
+.hero-right img{
+    width: 100%;
+}
+
+/* information-section */
+
+.info{
+    grid-template-columns: repeat(2, 1fr);  
+    margin-top: 7rem; 
+}
+
+.info-box:nth-child(2){
+    margin-top: 4rem;
+}
+
+.info-box:nth-child(3){
+    margin-top: 4rem;
+}
+
+.left-info h1{
+    font-size: 4rem;
+    color: var(--DarkBlue);
+    line-height: 5rem;
+}
+
+.left-info p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: var(--DarkGrayishBlue);
+}
+
+.info-btn{
+    padding: .8rem 2.5rem;
+}
+
+.num-header{
+    align-items: center;
+    gap: 2rem;
+}
+
+.num-header h2{
+    font-size: 1.5rem;
+}
+
+.info-box p{
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    margin-left: 8.5rem;
+    line-height: 2rem;
+    color: var(--DarkGrayishBlue);
+}
+
+/* profile section */
+
+.profiles{
+    width: 100%;
+    text-align: center;
+    margin-top: 11rem;
+}
+
+.profiles h1{
+    font-size: 4rem;
+    color: var(--DarkBlue);
+}
+
+.profile-container{
+    width: 100%;
+    gap: 1rem;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 10rem;
+}
+
+.profile{
+    background:var(--VaryLightGray);
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+.profile h2{
+    font-size: 1.5rem;
+}
+
+.profile p{
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    color: var(--DarkGrayishBlue);
+}
+
+.profile img{
+    width: 30%;
+    margin-inline: auto;
+    position: relative;
+    top: -20%;
+}
+
+.profiles .btn{
+    margin-top: 4rem;
+}
+
+/* footer section */
+
+.footer-area{
+    width: 100vw;
+    margin-top: 14rem;
+    background: var(--BrightRed);
+}
+
+
+.foot-info{
+    height: 160px;
+    justify-content: space-between;
+    align-items: center;
+
+    h1{
+        font-size: 4rem;
+        color: white;
+    }
+
+    .secondary-btn{
+        background: white;
+        color: var(--BrightRed);
+    }
+}
+
+.footer-align{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-discription{
+    background: var(--VeryDarkBlue);
+    padding: 3rem 0rem;
+
+    img{
+        filter: invert;
+    }
+}
+
+.social-icons{
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.footer-nav{
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer-nav a{
+    color: white;
+}
+
+.search-box input[type="text"]{
+    padding: 1rem 1.5rem;
+    border-radius: 2pc;
+    border: none;
+    margin-right: 1rem;
+}
+
+
+.search-box p{
+    color: white;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+}

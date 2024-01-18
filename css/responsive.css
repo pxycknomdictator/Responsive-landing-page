@@ -1,0 +1,200 @@
+@media (width <=1087px) {
+    html {
+        font-size: 59.5%;
+    }
+}
+
+@media (width <=1035px) {
+    html {
+        font-size: 56.5%;
+    }
+
+    .ham-burger {
+        display: block;
+    }
+
+    .header .action-btn {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+}
+
+@media (width <=920px) {
+    html {
+        font-size: 54.5%;
+    }
+}
+
+@media (width <=870px) {
+    html {
+        font-size: 50.5%;
+    }
+}
+
+@media (width <=768px) {
+    html {
+        font-size: 50.5%;
+    }
+
+    .footer-align {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    }
+}
+
+@media (width <=680px) {
+    html {
+        font-size: 46.5%;
+    }
+
+    .search-box input {
+        margin-bottom: 1.2rem;
+    }
+
+    .search-box button {
+        padding: 1rem 4rem;
+    }
+}
+
+@media (width <=620px) {
+    html {
+        font-size: 43.5%;
+    }
+
+    .profile img {
+        width: 40%;
+    }
+
+}
+
+@media (width <=570px) {
+    html {
+        font-size: 40.5%;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+    }
+
+    .hero h1 {
+        font-size: 6rem;
+    }
+
+    .hero p {
+        font-size: 3rem;
+        line-height: 4.5rem;
+    }
+
+    .hero button {
+        padding: 2rem 3rem;
+        font-size: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+    .left-info {
+        text-align: center;
+    }
+
+    .info h1 {
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+
+    .info p {
+        font-size: 2.8rem;
+        line-height: 4.5rem;
+        margin-inline: 0;
+    }
+
+    .info-box {
+        gap: 5rem;
+    }
+
+    .info-box h2 {
+        font-size: 3rem;
+    }
+
+    .info-box button {
+        padding: 1.3rem 3rem;
+    }
+
+
+    .profile-container {
+        grid-template-columns: 1fr;
+        gap: 10rem;
+    }
+
+    .profiles h1 {
+        font-size: 6rem;
+    }
+
+    .profiles p {
+        text-align: center;
+        font-size: 2.8rem;
+        line-height: 3.5rem;
+    }
+
+    .profile h2 {
+        font-size: 3rem;
+    }
+
+    .footer-align {
+        gap: 2rem;
+        justify-items: center;
+    }
+
+    .social-icons {
+        margin-top: 0;
+    }
+
+    .footer-logo {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+
+    .search-box {
+        grid-area: 3 / 1 / 4 /3;
+    }
+
+    .footer-area{
+        text-align: center;
+    }
+
+
+    .foot-info{
+        text-align: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+}
+
+
+@media (width <=440px) {
+    html {
+        font-size: 36.5%;
+    }
+}
+@media (width <=400px) {
+    html {
+        font-size: 33.5%;
+    }
+}
+@media (width < 344px) {
+    html {
+        font-size: 32.5%;
+    }
+}
+@media (width <= 330px) {
+    html {
+        font-size: 29.5%;
+    }
+}
